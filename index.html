@@ -4,30 +4,80 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jens Finkemeyer</title>
+	<title>FNKMYR</title>
+	<link rel="stylesheet" href="styling.css">
+	<!--FontAwesome-->
+	<link rel="stylesheet" href="./fontawesome/css/all.css">
 </head>
 <body>
+	<a name="top"></a>
 	<header>
-		<h1>Jens Finkemeyer</h1>
-		<nav>
-		  <a href="#contact">Contact</a>
-		  <a href="#biography">Biography</a>
-		</nav>
+		<div class="header-text">
+			<div class="gap-10"></div>
+				<h1>FNKMYR</h1>
+				<div class="vertical-line"></div>
+				<p>
+				<div class="socialIcons">
+					<a class="fab fa-github" href="https://github.com/FNKMYR"></a>
+					<a class="fab fa-linkedin" href="https://www.linkedin.com/in/jens-finkemeyer-4514371a9/"></a>
+					<a class="fab fa-codepen" href="https://codepen.io/fnkmyr"></a>
+					</div>
+				</p>
+				<p>
+					<nav class="headNav">
+						<a href="#aboutme" class="button">Who am I?</a>
+						<a href="#biography" class="button">Biography</a>
+						<a href="#projects" class="button">Projects</a>
+						<a href="#contact" class="button">Contact</a>
+					</nav>
+				</p>
+				<div class="gap-10"></div>
+			</div>
 	</header>
-	<figure>	
-		<img src="https://www.w3schools.com/tags/workplace.jpg" alt="" usemap="#imagemap" width="400" height="379">
-		<figcaption>A figure with a caption.</figcaption>
-	</figure>
-	<map name="imagemap">
-		<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-	</map>
-	<section id="contact">
-		<h2>Contact</h2>
-		Here goes my contact information.
-	</section>
-	<section id="biography">
-		<h2>Biography</h2>
-		Let's try this
-	</section>
+	<main>
+		<img src="images/macbook3.jpg" alt="" class="sectionPic">
+		<section class="sectionBox" id="aboutme">
+			<h2 class="sectionHead">Who am I?</h2>
+			My name is Jens Finkemeyer and I'm 26 years old. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+		</section>
+		<section class="sectionBox" id="biography">
+			<h2 class="sectionHead">Biography</h2>	
+			<ol>
+				<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				<li>Aliquam tincidunt mauris eu risus.</li>
+				<li>Vestibulum auctor dapibus neque.</li>
+			</ol>
+			</section>
+		<section class="sectionBox" id="projects">
+			<h2 class="sectionHead">Projects</h2>	
+			<ol>
+				<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				<li>Aliquam tincidunt mauris eu risus.</li>
+				<li>Vestibulum auctor dapibus neque.</li>
+			</ol>
+		</section>		
+		<section class="sectionBox" id="contact">
+			<h2 class="sectionHead">Contact</h2>
+			<nav>
+				<ul>
+				<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+				<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliåquam</a></li>
+				<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+				<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
+				<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
+				</ul>
+			</nav>
+		</section>
+	</main>
+	<footer>
+		<div class="vertical-line2"></div>
+		<ul>
+			<li>Item1</li>
+			<li class="toTop"><i class="fas fa-arrow-up"></i> 
+				<a href="#top">Back to the top</a>
+			</li>
+			<li>Item3</li>
+		</ul>
+	</footer>
 </body>
 </html>
