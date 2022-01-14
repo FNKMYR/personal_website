@@ -33,7 +33,7 @@ body {
   color:inherit;
 }
 .headarrow {
-  color: black;
+  color: #1b1b1b;
   font-size: 30px;
 }
 
@@ -41,43 +41,9 @@ body {
 header {
   background-size: 100%;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(27, 27, 27);
   width: 100%;
 }
-.staticHead {
-  background-color: rgb(255, 255, 255);
-  height: 50px;
-  opacity: 10%;
-  position:fixed;
-  width: 100%;
-  z-index: 2;
-}
-.staticHead ul {
-display: flex;
-flex-flow: row wrap;
-padding-inline-start: 2%;
-padding-inline-end: 2%;
-}
-.staticHead ul li {
-  margin: auto;
-  list-style: none;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-.staticHead ul li a {
-  text-decoration: none;
-  color: black;
-  }
-  
-.staticHead:hover {
-  opacity: 85%;
-  font-weight: bolder;
-  z-index: 2;
-}
-.staticHead ul li:hover {
-  box-shadow: 0px 0px 5px 3px rgba(90, 90, 90, 0.2) inset;
-}
-
 .header-text {
   margin-top: 0;
   font-size: 1.5rem;
@@ -129,9 +95,59 @@ padding-inline-end: 2%;
 /* main */
 
 main {
-  margin: 5% 5%;
   line-height: 1.4;;
 }
+.mainbody {
+  margin: 5% 5%;
+}
+
+.staticHead {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 50px;
+  width: 100%;
+  z-index: 2;
+}
+.staticHead {
+  position: -webkit-sticky;
+  position:sticky;
+  top: 0px;  
+}
+.staticHead ul {
+  margin: 0px;
+  padding-top: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-inline-start: 2%;
+  padding-inline-end: 2%;
+}
+.staticHead ul li {
+  margin: auto;
+  list-style: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.staticHead ul li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  }
+  
+.staticHead:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 2;
+}
+.staticHead:hover > #stickyBar a , .staticHead:hover .headarrow  {
+  color: black;
+}
+staticHead:hover > .staticHead i {
+  color: rgba(187, 22, 22, 0.85);
+}
+.staticHead ul li:hover:not(:first-child) {
+  box-shadow: inset 0px 0px 5px 3px rgba(90, 90, 90, 0.3), 0px 0px 5px 3px rgba(90, 90, 90, 0.3);
+}
+.staticHead ul li a:hover {
+  color: black;
+}
+
 
 .sectionBox {
   width: 100%;
@@ -141,7 +157,7 @@ main {
   border-radius: 13px;
 }
 .sectionBox:hover {
-  box-shadow: inset 0px 0px 60px 200px rgba(110, 67, 107, 0.175), 0px 0px 60px 50px rgba(110, 67, 107, 0.175);
+  box-shadow: inset 0px 0px 60px 200px rgba(110, 67, 107, 0.175), 0px 0px 60px 45px rgba(110, 67, 107, 0.175);
 }
 .sectionPic {
   display:block;
@@ -155,6 +171,10 @@ main {
 }
 .sectionPic:hover {
   transform: scale(1.2)
+}
+#aboutme {
+  padding: 24px 0px 0px 0px;
+  margin: -24px 0px 0px 0px;
 }
 
 #contact nav li a{
