@@ -138,7 +138,7 @@ main {
 .staticHead:hover > #stickyBar a , .staticHead:hover .headarrow  {
   color: black;
 }
-staticHead:hover > .staticHead i {
+staticHead:hover .fas {
   color: rgba(187, 22, 22, 0.85);
 }
 .staticHead ul li:hover:not(:first-child) {
