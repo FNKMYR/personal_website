@@ -109,7 +109,7 @@ main {
 }
 .staticHead {
   position: -webkit-sticky;
-  position:sticky;
+  position: sticky;
   top: 0px;  
 }
 .staticHead ul {
@@ -155,6 +155,7 @@ staticHead:hover > .staticHead i {
   margin: 5px;
   padding: 5px;
   border-radius: 13px;
+  z-index: 2;
 }
 .sectionBox:hover {
   box-shadow: inset 0px 0px 60px 200px rgba(110, 67, 107, 0.175), 0px 0px 60px 45px rgba(110, 67, 107, 0.175);
@@ -203,7 +204,7 @@ footer ul {
   margin: 5px;
   display: flex;
   justify-content: space-between;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   list-style-type: none;
 }
 
