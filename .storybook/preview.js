@@ -1,6 +1,7 @@
 import "../styles/base.css";
-import "../styles/colors.css";
 import "../styles/utility.css";
+import "../styles/icons.css";
+import "../fontawesome/css/all.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
