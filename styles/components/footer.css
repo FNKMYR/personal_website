@@ -1,0 +1,15 @@
+footer {
+  margin: 15px 5%;
+}
+
+.footer__list {
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+.toTop:hover {
+  font-weight: bolder;
+  transform: scale(1.1);
+}

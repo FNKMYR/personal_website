@@ -1,0 +1,41 @@
+
+.nav-sticky {
+  height: 50px;
+  width: 100%;
+  z-index: 2;
+  position: sticky;
+  top: 0px;
+}
+
+.nav-sticky__ul {
+  height: inherit;
+  margin: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-inline-start: 2%;
+  padding-inline-end: 2%;
+}
+.nav-sticky__ul li {
+  margin: auto;
+  list-style: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.nav-sticky__ul li a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+.nav-sticky__ul:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 1;
+}
+
+.nav-sticky__ul:hover .fa-align-justify {
+  opacity: 0;
+}
+
+.nav-sticky__ul li:hover:not(:first-child) {
+  box-shadow: inset 0px 0px 5px 3px rgba(90, 90, 90, 0.3),
+    0px 0px 5px 3px rgba(90, 90, 90, 0.3);
+}
