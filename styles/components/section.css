@@ -1,0 +1,37 @@
+.section__pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  width: 80%;
+  box-shadow: 0 0 8px 8px #010101 inset;
+  border-radius: 60%;
+  transition: 2s ease-in;
+}
+.section__pic:hover {
+  transform: scale(1.2);
+}
+
+.sectionBox {
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 13px;
+  z-index: 2;
+}
+.sectionBox:hover {
+  box-shadow: inset 0px 0px 60px 200px rgba(110, 67, 107, 0.175), 0px 0px 60px 45px rgba(110, 67, 107, 0.175);
+}
+
+.section__spacer {
+  padding: 24px 0px 0px 0px;
+  margin: -24px 0px 0px 0px;
+}
+
+.section__contact-link {
+  color: inherit;
+}
+.section__contact-link:hover {
+  color: white;
+}
